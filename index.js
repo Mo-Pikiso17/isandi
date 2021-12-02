@@ -66,7 +66,7 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function (req, res) {
 
 
-    res.render('dummy1.html')
+    res.render('./public/dummy1.html')
 })
 
 // app.get('/player/level', async function (req, res) {
