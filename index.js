@@ -62,13 +62,12 @@ app.use(express.static(__dirname + '/public'));
 
 // });
 
-// // home route...get everything from the players table
-// app.get('/', async function (req, res) {
+// // home route...
+app.get('/', function (req, res) {
 
-// 	var data = (await pool.query('select (name,score,level) from players')).rows;
 
-//     res.json(data)
-// })
+    res.render('dummy1.html')
+})
 
 // app.get('/player/level', async function (req, res) {
 
